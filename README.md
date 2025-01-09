@@ -24,8 +24,8 @@
 - weights initialization: random (common in NNs), Xavier/Glorot (common in DL with sigmoid or tanh activations), He (common in DL with ReLu), pre-trained (transfer learning)
 - prediction
 - Learning Rate Schedulers: StepLR, ExponentialLR, CosineAnnealingLR
-- loss: Mean Squared Error (MSE, related to L2 norm) for regression, Cross-Entropy Loss for classification
-	- metrics to measure distance: Mean Absolute Difference (aka L1 norm), RMSE (Root Mean Square Error, aka L2 norm), contrastive loss function (multimodal search)
+- loss: Mean Squared Error (MSE, related to L2 norm) for regression, Cross-Entropy Loss for classification, Contrastive loss function (multimodal search)
+	- metrics to measure distance: Mean Absolute Difference (aka L1 norm), RMSE (Root Mean Square Error, aka L2 norm)
       - cosine distances depend on angles between embeddings
       - eucledian distance minimizes proximity between similar points
 - optimization: updating weights to decrease loss with gradients
