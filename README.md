@@ -4,7 +4,7 @@
 
 ### Which Function?
 - Can create an infinitely flexible function from this one tiny thing *F.relu(m*x+b)
-- Well, many of these things plus a simple non-linearity to separate them:
+	- Well, many of these things plus a simple non-linearity to separate them:
   ```python
   def rectified_linear(m, b, x):  # relu = rectified linear unit
       y = m * x + b  # Matrix multiplication, which is just multiplying things together and then adding them up
@@ -47,26 +47,25 @@
 ### Optimizing training 
 - Learning Rate Schedulers: StepLR, ExponentialLR, CosineAnnealingLR
 - Regularization: Techniques to prevent overfitting
-		- L1/L2 Regularization
-		- Dropout
-		- Batch Normalization
+	- L1/L2 Regularization
+ 	- Dropout
+  	- Batch Normalization
 - Early Stopping: Stop training when performance on a validation set starts to degrade
 - Hyperparameter Tuning: Grid search, random search, Bayesian optimization
 
-### Optimizing inference:
-•	[NLP with Transformers](https://github.com/nlp-with-transformers/notebooks)
+### Optimizing inference
+#### [NLP with Transformers](https://github.com/nlp-with-transformers/notebooks)
  - Model Pruning: Removing less important weights to reduce model size
  - Quantization: Reducing the precision of the numbers used to represent the model parameters
  - Knowledge Distillation: Training a smaller model to mimic a larger model
  - Deployment: Techniques for deploying models efficiently (e.g., TensorRT, ONNX)
    
-•	[Efficiently Serving LLMs](https://www.deeplearning.ai/short-courses/efficiently-serving-llms/)
+#### [Efficiently Serving LLMs](https://www.deeplearning.ai/short-courses/efficiently-serving-llms/)
    - Speeding up text generation with KV-caching
    - Batching (processing multiple inputs at once: but! trading throughput with latency = user has to wait for the batch)
    - continuous batching: constantly swap out requests from the batch that have completed generation for requests in the queue that are waiting to be processed
    - Quantization
    - low-rank adaptation (LoRa), multi-lora inference, LoRaX
-
 
 ### Advanced techniques
 - Transfer Learning: Using pre-trained models and fine-tuning them on new tasks
