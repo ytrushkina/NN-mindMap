@@ -18,6 +18,7 @@
 - training scheduler
 - train for a #epochs (or use others stops)
 - check the performance (e.g. visualize the loss curve)
+- optimize
 
 ### Training = fitting the function to the data
 - weights initialization: random (common in NNs), Xavier/Glorot (common in DL with sigmoid or tanh activations), He (common in DL with ReLu), pre-trained (transfer learning)
