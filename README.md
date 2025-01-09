@@ -3,7 +3,7 @@
 ## Background: NN as a Function
 
 ### Which Function?
-- Can create an infinitely flexible function from this one tiny thing *F.relu(m*x+b)*
+- Can create an infinitely flexible function from this one tiny thing *F.relu(m*x+b)
 - Well, many of these things plus a simple non-linearity to separate them:
   ```python
   def rectified_linear(m, b, x):  # relu = rectified linear unit
